@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_home"
+    tools:context="com.kimvan.hung.backuprestoretest.HomeActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/name"
+            android:text="Tên"
+            android:textSize="20sp"
+            android:paddingLeft="5dp"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/name_edit"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/born_date"
+            android:text="Ngày Sinh"
+            android:textSize="20sp"
+            android:paddingLeft="5dp"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/born_date_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/telephone_number"
+            android:text="Số Điện Thoại"
+            android:textSize="20sp"
+            android:paddingLeft="5dp"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/telephone_number_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"/>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/restore_button"
+                android:text="Restore"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="restoreClicked"/>
+            <Button
+                android:id="@+id/review_button"
+                android:layout_margin="8dp"
+                android:text="Review"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="reviewClicked"/>
+            <Button
+                android:id="@+id/backup_button"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+                android:text="Backup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="backupClicked"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
